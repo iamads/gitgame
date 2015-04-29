@@ -5,10 +5,11 @@
     <title></title>
 </head>
 <b>Hi {{ user.name }} your repos are listed here do select one</b>
-
-{% for repo in repo_list %}
-    {{ repo.name }}
+<ul>
+{% for repo in repos %}
+   <li>{{ repo.name }}</li>
 {% endfor %}
+</ul>
 <body>
 
 </body>
